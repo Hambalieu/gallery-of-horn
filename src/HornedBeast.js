@@ -1,20 +1,39 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
 
 import "./HornedBeast.css";
 
-class HornedBeast extends React.Component{
-  render(){
-    return(
-      <article className="child">
-        <h2>{this.props.title}</h2>
-        <img 
-          src={this.props.imageUrl} 
-          alt={this.props.title}
-          title={this.props.title}
-        />
-        <p>{this.props.description}</p>
+class HornedBeast extends React.Component {
 
-      </article>
+  constructor(props) {
+    super(props);
+    this.state = {
+      favorites: 0
+    }
+  }
+
+  handleFavorites = () => {
+    this.setState({
+      favorites: this.state.favorites + 1
+    })
+  }
+
+  render() {
+    return (
+      <Card style={{ width: '40%' }}>
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>♥️:{this.state.favorites}</Card.Text>
+          <Card.Img onClick={this.handleFavorites}
+            src={this.props.imageUrl}
+            alt={this.props.title}
+            title={this.props.title}
+          />
+          <Card.Text>{this.props.description}</Card.Text>
+
+        </Card.Body>
+
+      </Card>
 
     );
   }
