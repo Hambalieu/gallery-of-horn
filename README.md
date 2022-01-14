@@ -1,8 +1,8 @@
-# Lab 1 Gallery of Horns 
+# Gallery of Horns 
 
 - By the end of this week, I  am to  create an application that displays images and information of horned animals. This application will allow you to filter the images by number of horns and chose your favorite image.
 
-- But for todays lab 2 was focusing more on using the **JSON file** provided to display the *title*,*image* and *description* of each of horned beast in my Application   .
+- But for todays *Lab 3* was focusing more on adding more pieces of functionality to my App or adding more features to my App.When the user click on their favorite image the number of favorites  and the size of the image increases as well so that the user can view the detail of that single image that was clicked which is a  **Moral** displayed.
 
 - ## The Component that I created are the:
 1. Header Component
@@ -15,32 +15,22 @@
   >for the data of the images we need to display on our main page
 5. **CSS** Components
  >Added Main css and HornedBeast css for styling my application
+6.**Selected** Component
+>For selected image 
    
+### Author : Hambalieu Jallow 
+>With assistance of TA Marie and intructor Ryan 
+ 
+
+## Creating a Modal Lab 03
+
+- Number and name of feature: ____Feature 4 Modal___________________________
+
+Estimate of time needed to complete: _4_  hours
+
+Start time: 3:40pm
+
+Finish time: 7:40pm
 
 
-
-
-## tracking my work
-- Number and name of feature: ____Feature 1 Display imaages____________________________
-
-Estimate of time needed to complete: ____1 hour_
-
-Start time: ___8pm__
-
-Finish time: ___9pm__
-
-- Number and name of feature: ____Feature 2 Allows user to vote for thier favorite__image_________________________
-
-Estimate of time needed to complete: _1.5___ hour_
-
-Start time: ___9:10m__
-
-Finish time: ___10:40pm__
-
-- Number and name of feature: ____Feature 3 Bootstrap___________________________
-
-Estimate of time needed to complete: __3__ hour_
-
-Start time: ___10:40pm__
-
-Finish time: ___1:40am__
+[React Bootstrap Modal Link for reference](https://react-bootstrap.netlify.app/components/modal/#modals)

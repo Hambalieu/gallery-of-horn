@@ -6,7 +6,6 @@ class Footer extends React.Component{
       <footer>
         <p>&copy;hjallow </p>
       </footer>
-
     );
   }
 }
