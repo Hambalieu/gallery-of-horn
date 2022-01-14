@@ -1,11 +1,14 @@
 .child{
   width:40%;
   border:2px solid black;
+  margin-top: 2vw;
+  padding: 1vw;
  
 }
 
 .child img {
   width: 100%;
+  margin-bottom: 1vw;
 }
 
 

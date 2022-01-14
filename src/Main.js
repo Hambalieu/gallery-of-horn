@@ -3,25 +3,22 @@ import HornedBeast from "./HornedBeast.js";
 
 import "./Main.css";
 
-
 class Main extends React.Component{
   render(){
-
-    let totalImageArray = this.props.data.map((image, index)=> (
-
+    let totalImageArray = this.props.allData.map((beast,index) => (
       <HornedBeast
        key={index}
-       title={image.title}
-       imageUrl={image.image_url}  description={image.description}
+       handleShowModal={this.props.handleShowModal}
+       title={beast.title}
+       imageUrl={beast.image_url}  
+       description={beast.description}
+       beast={beast} 
       />
     ));
-
-
     return(
       <main>
         {totalImageArray}
       </main>
-
     );
   }
 }
