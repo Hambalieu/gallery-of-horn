@@ -12,16 +12,16 @@ class SelectedBeast extends React.Component {
           size="med"
         >
           <Modal.Header closeButton>
-            <Modal.Title>{this.props.beast.title}</Modal.Title>
+            <Modal.Title>{this.props.currentBeast.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <img
               style={{ width: '100%' }}
-              src={this.props.beast.image_url}
+              src={this.props.currentBeast.image_url}
               className="modal-90w"
-              alt={this.props.beast.title}
+              alt={this.props.currentBeast.title}
             />
-            {this.props.beast.description}
+            {this.props.currentBeast.description}
           </Modal.Body>
         </Modal>
     );
