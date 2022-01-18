@@ -13,9 +13,7 @@ class Main extends React.Component{
   }
   handleSelect = (numOfHorns) => { 
     numOfHorns = parseInt(numOfHorns);
-    let newSelection = this.props.allData.filter(obj => {
-      if (obj.horns === numOfHorns) return obj
-    });
+    let newSelection = this.props.allData.filter(obj => obj.horns === numOfHorns?  obj : false);
     this.setState({
       beastsToShow: numOfHorns ? newSelection : this.props.allData
     })
