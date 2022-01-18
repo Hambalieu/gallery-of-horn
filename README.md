@@ -2,7 +2,7 @@
 
 - By the end of this week, I  am to  create an application that displays images and information of horned animals. This application will allow you to filter the images by number of horns and chose your favorite image.
 
-- But for todays *Lab 3* was focusing more on adding more pieces of functionality to my App or adding more features to my App.When the user click on their favorite image the number of favorites  and the size of the image increases as well so that the user can view the detail of that single image that was clicked which is a  **Moral** displayed.
+- But for todays *Lab 4* was focusing more on adding more pieces of functionality to my App  **fitering** by numbers of horns using a **Forms** displayed.
 
 - ## The Component that I created are the:
 1. Header Component
@@ -19,18 +19,20 @@
 >For selected image 
    
 ### Author : Hambalieu Jallow 
->With assistance of TA Marie and intructor Ryan 
+ 
  
 
 ## Creating a Modal Lab 03
 
-- Number and name of feature: ____Feature 4 Modal___________________________
+- Number and name of feature: ____Feature 5 __________Forms_________________
 
-Estimate of time needed to complete: _4_  hours
+Estimate of time needed to complete: _2_  hours
 
-Start time: 3:40pm
+Start time: 8:40pm
 
-Finish time: 7:40pm
+Finish time: 10:40pm
 
 
-[React Bootstrap Modal Link for reference](https://react-bootstrap.netlify.app/components/modal/#modals)
+
+
+[React Bootstrap Forms Link for reference](https://react-bootstrap.github.io/forms/overview/)

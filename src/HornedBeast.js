@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-
 import "./HornedBeast.css";
 
 class HornedBeast extends React.Component {
@@ -15,7 +14,6 @@ class HornedBeast extends React.Component {
     this.setState({
       favorites: this.state.favorites + 1
     });
-
     this.props.handleShowModal(this.props.beast);
   }
 
@@ -30,7 +28,8 @@ class HornedBeast extends React.Component {
             alt={this.props.title}
             title={this.props.title}
           />
-          <Card.Text>{this.props.description}</Card.Text>
+          <Card.Text>{this.props.description}
+          </Card.Text>
         </Card.Body>
       </Card>
     );

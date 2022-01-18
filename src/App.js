@@ -2,26 +2,26 @@ import React from 'react';
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
-import data from './data.json';
+import Data from './data.json';
 import SelectedBeast from './SelectedBeast.js';
 
 import "./App.css";
 
-
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      show:false,
-      beast:{},
-      allData:data
+      currentBeast:'',
+      beast: {},
+      show: false,
+      allData: Data,   
     }
   }
 
   handleShowModal = (beast) => {
     this.setState({
-      show:true,
-      beast
+      show: true,
+      currentBeast: beast
     })
   }
 
@@ -31,17 +31,24 @@ class App extends React.Component {
     })
   }
 
-  render(){
+  filterBeast = (allData)=>{
+    this.setState({
+      allData:allData
+    });
+  }
+  render() {
     return (
       <>
         <Header />
         <SelectedBeast
+          handleShowModal={this.handleShowModal}
           show={this.state.show}
           handleCloseModal={this.handleCloseModal}
-          beast={this.state.beast}
+          currentBeast={this.state.currentBeast}
         />
-        <Main allData={this.state.allData}
+        <Main allData={Data}
           handleShowModal={this.handleShowModal}
+          filterBeast={this.filterBeast}
         />
         <Footer />
       </>
