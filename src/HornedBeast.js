@@ -14,7 +14,6 @@ class HornedBeast extends React.Component {
     this.setState({
       favorites: this.state.favorites + 1
     });
-
     this.props.handleShowModal(this.props.beast);
   }
 

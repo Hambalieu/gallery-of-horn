@@ -3,23 +3,6 @@ import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 
 class HornForm extends React.Component {
-
-  // handleSelect = event => {
-
-  //   // let numOfHorns = parseInt(event.target.value);
-  //   // console.log(numOfHorns);
-  //   // let newSelection = this.props.allData.filter(obj =>
-  //   //   obj.horns === numOfHorns);
-  //   // let beastsToShow = numOfHorns ? newSelection : this.props.allData
-
-  //   // this.props.filterBeast(beastsToShow)
-  //   this.setState({
-  //     beastsToShow: numOfHorns ? newSelection : this.props.allData
-  //   })
-  // }
-
-
-
   render() {
     return (
       <Container>

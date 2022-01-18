@@ -5,10 +5,7 @@ import Footer from './Footer.js';
 import Data from './data.json';
 import SelectedBeast from './SelectedBeast.js';
 
-
 import "./App.css";
-
-
 
 class App extends React.Component {
   constructor(props) {
@@ -17,8 +14,7 @@ class App extends React.Component {
       currentBeast:'',
       beast: {},
       show: false,
-      allData: Data,
-      
+      allData: Data,   
     }
   }
 
@@ -34,16 +30,13 @@ class App extends React.Component {
       show: false
     })
   }
-  
+
   filterBeast = (allData)=>{
     this.setState({
       allData:allData
     });
   }
-
-
   render() {
-    console.log(this.state.currentBeast);
     return (
       <>
         <Header />

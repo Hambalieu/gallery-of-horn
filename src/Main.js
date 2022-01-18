@@ -11,21 +11,15 @@ class Main extends React.Component{
       beastsToShow: this.props.allData
     }
   }
-
-  handleSelect = (numOfHorns) => {
-   
+  handleSelect = (numOfHorns) => { 
     numOfHorns = parseInt(numOfHorns);
-    console.log(numOfHorns);
     let newSelection = this.props.allData.filter(obj => {
       if (obj.horns === numOfHorns) return obj
     });
-    console.log(newSelection);
     this.setState({
       beastsToShow: numOfHorns ? newSelection : this.props.allData
     })
-    console.log(this.state);
   }
-
   render(){
     let totalImageArray = this.state.beastsToShow.map((beast,index) => (
       <HornedBeast
